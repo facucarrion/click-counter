@@ -7,7 +7,7 @@ function Button ( {sumar, restar, restart} ) {
         Click
       </button>
       <button className='container__button restar' onClick={restar}>
-        Restar
+        Substract
       </button>
       <button className='container__button restart' onClick={restart}>
         Restart
