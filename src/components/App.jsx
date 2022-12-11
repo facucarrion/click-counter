@@ -1,13 +1,19 @@
 import { useState } from 'react'
-import '../assets/styles/App.css'
+import '/src/assets/styles/App.css'
+import Button from './Button'
+
 
 function App() {
-const names = ['Facundo Carrion', 'Giancarlo Franco', 'Fran']
-  return names.map(e => <Title name={e}/>)
-}
-
-function Title({name}) {
-  return <h1>{name}</h1>
+  const [count, setCount] = useState(0)
+  const sumar = () => setCount(count+1)
+  const restar = () => setCount(count-1)
+  const restart = () => setCount(0)
+  return (
+    <div className='container'>
+      <div className='container__count'>{count}</div>
+      <Button sumar={sumar} restart={restart} restar={restar}/>
+    </div>
+  )
 }
 
 export default App
