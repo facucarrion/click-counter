@@ -1,6 +1,6 @@
 import '../assets/styles/App.css'
 
-function Button ( {sumar, restar, restart, setAmount, setActive, active, isActive} ) {
+function Button ( {sumar, restar, restart, setAmount, setActive, isActive} ) {
   return (
     <div className='container__pannel'>
       <div className='container__subpannel'>

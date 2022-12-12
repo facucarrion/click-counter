@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '/src/assets/styles/App.css'
 import Button from './Button'
+import {Title, Watermark} from './Marks'
 
 
 function App() {
@@ -14,10 +15,14 @@ function App() {
   const isActive = (num) => active === num ? 'active' : "";
 
   return (
+    <>
+    <Title />
     <div className='container'>
       <div className='container__count'>{count}</div>
       <Button sumar={sumar} restart={restart} restar={restar} setAmount={setAmount} setActive={setActive} active={active} isActive={isActive} />
     </div>
+    <Watermark />
+    </>
   )
 }
 
