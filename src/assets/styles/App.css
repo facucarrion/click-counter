@@ -75,6 +75,10 @@ body, #root {
   border-color: var(--white);
 }
 
+.container__subpannel > button:focus {
+  outline: none;
+}
+
 .container__button {
   background: transparent;
   color: var(--white);
